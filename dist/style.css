@@ -14,8 +14,9 @@
 }
 
 body {
-    background-color: #1D0500;
+    background-color: #090100;
 }
+
 
 /* header */
 
@@ -66,6 +67,7 @@ nav button:active {
 #content {
     width: 100%;
     min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     background: url(./images/background.JPG) top center / 100% no-repeat;
@@ -76,12 +78,12 @@ nav button:active {
     position: relative;
 }
 
-#content .main-page {
+.main-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 12%;
+    top: 25%;
     width: 400px;
     height: 300px;
 }
@@ -128,11 +130,10 @@ nav button:active {
     width: 80%;
     padding: 30px 45px;
     color: var(--white-color);
-    margin-top: 5%;
-    margin-bottom: 50px;
+    top: 12%;
 }
 
-.menu h2{
+.title {
     position: relative;
     text-align: center;
     z-index: 1;
