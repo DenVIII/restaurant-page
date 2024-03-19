@@ -78,7 +78,7 @@ nav button:active {
     position: relative;
 }
 
-.main-page {
+.home-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,7 +88,7 @@ nav button:active {
     height: 300px;
 }
 
-.main-page * {
+.home-page * {
     color: var(--white-color);
     z-index: 1;
 }
