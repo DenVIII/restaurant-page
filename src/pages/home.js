@@ -6,6 +6,7 @@ function createHome() {
     const subheading = document.createElement('p')
     const bookingBtn = document.createElement('button')
 
+    home.classList.add('home-page')
     heading.classList.add('heading')
     subheading.classList.add('subheading')
     bookingBtn.classList.add('booking-btn')
