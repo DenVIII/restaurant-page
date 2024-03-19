@@ -1,1 +1,3 @@
-// alert('Hello12')
+import createHome from './pages/home'
+
+createHome()
