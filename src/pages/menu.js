@@ -1,6 +1,7 @@
 import menuData from './menu-positions.js'
 
 function createMenu() {
+    console.log(12)
     const content = document.querySelector('#content')
 
     const menu = document.createElement('div')
@@ -11,14 +12,14 @@ function createMenu() {
 
     title.textContent = "Our Menu:"
 
-    menuData.forEach(position => {
-        menu.appendChild(createMenuPosition(position.title, position.text, position.price))
+    menuData.forEach((position, index) => {
+        menu.appendChild(createMenuPosition(position.title, position.text, position.price, index))
     })
 
     content.appendChild(menu)
 }
 
-function createMenuPosition(title, text, price) {
+function createMenuPosition(title, text, price, i) {
     const position = document.createElement('div')
     const dishImg = document.createElement('img')
     const description = document.createElement('div')
@@ -27,6 +28,12 @@ function createMenuPosition(title, text, price) {
     const positionPrice = document.createElement('p')
 
     position.classList.add('menu-position')
+
+    if (i % 2 === 0) {
+        position.classList.add('left')
+    } else {
+        position.classList.add('right')
+    }
 
     dishImg.src = `./images/menu/${title.toLowerCase()}.jpg`
     dishImg.alt = `Image of ${title}`
