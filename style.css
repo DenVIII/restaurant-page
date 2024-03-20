@@ -67,14 +67,10 @@ nav button:active {
 #content {
     width: 100%;
     min-height: 100vh;
-    height: 100vh;
+    padding: 100px 0;
     display: flex;
     justify-content: center;
     background: url(./images/background.JPG) top center / 100% no-repeat;
-    position: relative;
-}
-
-#content>div:first-child {
     position: relative;
 }
 
@@ -83,6 +79,7 @@ nav button:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
     top: 25%;
     width: 400px;
     height: 300px;
@@ -130,7 +127,7 @@ nav button:active {
     width: 80%;
     padding: 30px 45px;
     color: var(--white-color);
-    top: 12%;
+    position: relative;
 }
 
 .title {
@@ -187,6 +184,7 @@ nav button:active {
     color: var(--white-color);
     padding: 30px 150px;
     top: 20%;
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
