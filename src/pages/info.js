@@ -1,5 +1,6 @@
 function createInfo() {
     const content = document.querySelector('#content')
+    content.textContent = ''
 
     const info = document.createElement('div')
     const about = document.createElement('div')

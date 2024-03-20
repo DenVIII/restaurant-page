@@ -3,6 +3,7 @@ import menuData from './menu-positions.js'
 function createMenu() {
     console.log(12)
     const content = document.querySelector('#content')
+    content.textContent = ''
 
     const menu = document.createElement('div')
     const title = document.createElement('h2')

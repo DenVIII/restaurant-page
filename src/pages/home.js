@@ -1,5 +1,6 @@
 function createHome() {
     const content = document.querySelector('#content')
+    content.textContent = ''
 
     const home = document.createElement('div')
     const heading = document.createElement('h1')
