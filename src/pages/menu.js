@@ -1,4 +1,10 @@
-import menuData from './menu-positions.js'
+import '../styles/menu.css'
+import turkeyImg from '../img/menu/turkey.jpg'
+import fruitSaladImg from '../img/menu/fruit-salad.jpg'
+import chefsSpecialImg from '../img/menu/chef\'s-special.jpg'
+import menuData from '../data/menu-positions.js'
+
+const imgArray = [turkeyImg, fruitSaladImg, chefsSpecialImg]
 
 function createMenu() {
     console.log(12)
@@ -36,7 +42,7 @@ function createMenuPosition(title, text, price, i) {
         position.classList.add('right')
     }
 
-    dishImg.src = `./images/menu/${title.toLowerCase()}.jpg`
+    dishImg.src = imgArray[i]
     dishImg.alt = `Image of ${title}`
     dishImg.classList.add ('menu-position-img')
 

@@ -1,3 +1,5 @@
+import '../styles/home.css'
+
 function createHome() {
     const content = document.querySelector('#content')
     content.textContent = ''

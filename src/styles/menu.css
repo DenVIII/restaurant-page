@@ -1,0 +1,43 @@
+.menu {
+    width: 80%;
+    padding: 30px 45px;
+    color: var(--white-color);
+    position: relative;
+}
+
+.menu-position {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 55px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid var(--white-color);
+    padding-bottom: 30px;
+}
+
+.menu-position-img {
+    width: 50%;
+    box-shadow: 10px 5px 5px var(--black-color);
+}
+
+.right {
+    flex-direction: row-reverse;
+}
+
+.menu-position-descr {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-position-price {
+    margin-top: auto;
+}
+
+.left .menu-position-price {
+    text-align: right;
+}
+
+.price {
+    margin-left: 2rem;
+    font-weight: bold;
+}

@@ -1,3 +1,5 @@
+import '../styles/info.css'
+
 function createInfo() {
     const content = document.querySelector('#content')
     content.textContent = ''

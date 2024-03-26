@@ -1,3 +1,4 @@
+import './styles/base.css'
 import createHome from './pages/home'
 import createMenu from './pages/menu'
 import createInfo from './pages/info'
@@ -10,4 +11,4 @@ homeBtn.addEventListener('click', createHome)
 menuBtn.addEventListener('click', createMenu)
 infoBtn.addEventListener('click', createInfo)
 
-createInfo()
+createHome()

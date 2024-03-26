@@ -1,0 +1,16 @@
+.info {
+    width: 60%;
+    height: 450px;
+    color: var(--white-color);
+    padding: 30px 150px;
+    top: 20%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.info div {
+    position: relative;
+    z-index: 1;
+}

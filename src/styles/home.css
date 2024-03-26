@@ -1,0 +1,32 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    width: 400px;
+    height: 300px;
+}
+
+.home-page * {
+    color: var(--white-color);
+    z-index: 1;
+}
+
+.booking-btn {
+    cursor: pointer;
+    margin-top: 20px;
+    width: 120px;
+    height: 30px;
+    font-size: 1rem;
+    color: var(--black-color);
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 5px;
+}
+
+.booking-btn:active {
+    background-color: var(--white-color);
+    border: 1px solid var(--black-color);
+}
